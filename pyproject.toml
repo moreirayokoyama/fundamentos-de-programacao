@@ -24,6 +24,8 @@ rich = "^13.7.1"
 typos = "^1.23.6"
 ruff = "^0.6.1"
 mkdocs-quiz = "^0.0.41"
+taskipy = "^1.13.0"
+mkdocs-with-pdf = "^0.9.3"
 
 [tool.poetry.group.snippets.dependencies]
 pytest = "^8.1.1"
