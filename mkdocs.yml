@@ -1,1 +1,18 @@
-site_name: My Docs
+site_name: Fundamentos de Programação
+site_url: https://moreirayokoyama.github.io/fundamentos-de-programacao
+repo_url: https://github.com/moreirayokoyama/fundamentos-de-programacao
+repo_name: moreirayokoyama/fundamentos-de-programacao
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo noturno
