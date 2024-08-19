@@ -16,3 +16,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Modo noturno
+plugins:
+  - gen_nav:
+      enabled: true
