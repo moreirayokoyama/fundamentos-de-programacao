@@ -2,9 +2,20 @@ site_name: Fundamentos de Programação
 site_url: https://moreirayokoyama.github.io/fundamentos-de-programacao
 repo_url: https://github.com/moreirayokoyama/fundamentos-de-programacao
 repo_name: moreirayokoyama/fundamentos-de-programacao
+
 theme:
   name: material
   language: pt-BR
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.footnote.tooltips
+    - navigation.indexes
+    - navigation.sections
   palette:
     - scheme: slate
       primary: teal
@@ -16,6 +27,3 @@ theme:
       toggle:
         icon: material/weather-night
         name: Modo noturno
-plugins:
-  - gen_nav:
-      enabled: true
