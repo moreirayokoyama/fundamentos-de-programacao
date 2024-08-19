@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "fundamentos-de-programacao"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Moreira Yokoyama <792153+moreirayokoyama@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
