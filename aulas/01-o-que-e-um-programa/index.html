@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://moreirayokoyama.github.io/fundamentos-de-programacao/aulas/01-o-que-e-um-programa/">
       
       
+        <link rel="prev" href="../..">
       
-      <link rel="icon" href="/fundamentos-de-programacao/assets/images/favicon.png">
+      
+        <link rel="next" href="../02-arquitetura-de-von-neumann/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
     
     
       
-        <title>Fundamentos de Programação</title>
+        <title>🚧 Aula 01 - O que é um Programa? - Fundamentos de Programação</title>
       
     
     
-      <link rel="stylesheet" href="/fundamentos-de-programacao/assets/stylesheets/main.76a95c52.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.76a95c52.min.css">
       
         
-        <link rel="stylesheet" href="/fundamentos-de-programacao/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,16 +48,51 @@
       
     
     
-      <link rel="stylesheet" href="/fundamentos-de-programacao/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/fundamentos-de-programacao/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="🚧 Aula 01 - O que é um Programa? - Fundamentos de Programação" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://moreirayokoyama.github.io/fundamentos-de-programacao/assets/images/social/aulas/01-o-que-e-um-programa.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://moreirayokoyama.github.io/fundamentos-de-programacao/aulas/01-o-que-e-um-programa/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="🚧 Aula 01 - O que é um Programa? - Fundamentos de Programação" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://moreirayokoyama.github.io/fundamentos-de-programacao/assets/images/social/aulas/01-o-que-e-um-programa.png" >
+      
     
-  </head>
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -69,6 +110,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#referencias" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +127,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="/fundamentos-de-programacao/." title="Fundamentos de Programação" class="md-header__button md-logo" aria-label="Fundamentos de Programação" data-md-component="logo">
+    <a href="../.." title="Fundamentos de Programação" class="md-header__button md-logo" aria-label="Fundamentos de Programação" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +147,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              🚧 Aula 01 - O que é um Programa?
             
           </span>
         </div>
@@ -221,7 +267,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/fundamentos-de-programacao/." title="Fundamentos de Programação" class="md-nav__button md-logo" aria-label="Fundamentos de Programação" data-md-component="logo">
+    <a href="../.." title="Fundamentos de Programação" class="md-nav__button md-logo" aria-label="Fundamentos de Programação" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -251,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos-de-programacao/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -268,8 +314,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -285,11 +333,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -303,7 +351,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Aulas
@@ -314,10 +362,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/fundamentos-de-programacao/aulas/01-o-que-e-um-programa/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    🚧 Aula 01 - O que é um Programa?
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -326,6 +392,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-building-abstraction-with-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Building Abstraction with Procedures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -338,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/fundamentos-de-programacao/aulas/02-arquitetura-de-von-neumann/" class="md-nav__link">
+      <a href="../02-arquitetura-de-von-neumann/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -377,6 +479,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-building-abstraction-with-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      - Building Abstraction with Procedures
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -387,8 +515,200 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>🚧 Aula 01 - O que é um Programa?</h1>
+
+<div><blockquote>
+<p>Nós estamos prestes a estudar a ideia de um <em>processo computacional</em>. Processos computacionais são seres abstratos que habitam computadores. À medida que se desenvolvem, processos manipulam outras coisas abstratas chamadas <em>dados</em>. A realização de um processo é dirigida por um padrão de regras chamado de <em>programa</em>. Pessoas criam programas para dirigir processos. Na prática, nós (programadores e programadoras) invocamos os espíritos do computador com nossos feitiços.
+- Structure and Interpretation of Computer Programs - Harold Abelson and Gerald Jay Sussman with Julie Sussman</p>
+</blockquote>
+<p>Eu amo a forma como os autores do livro Estrutura e Interpretação de Programas Computacionais descrevem processos como espíritos, nos comparando a magos e magas que criam feitiços que conjuram estes espíritos para realizar tarefas.</p>
+<p>Este é um bom ponto de partida. Se você alguma vez já tiver jogado RPG (como Dungeons and Dragons), você consegue de alguma forma se identificar com isto: A personagem é uma maga que aprende novos spells (feitiços) que manipulam a <em>trama</em> pra que ela faça algo sobrenatural acontecer em seu favor.</p>
+<p>Programas são como estes feitiços. Eles manipulam processos computacionais, para que eles façam algo acontecer.</p>
+<p>Pelo menos, é melhor do que uma definição formal:</p>
+<blockquote>
+<p>Um programa é um conjunto de instruções que um processo computacional segue para executar uma ou mais tarefas.</p>
+</blockquote>
+<p><em>Processos computacionais</em> são um conceito ligado à arquitetura de Sistemas Operacionais. Um Sistema Operacional é um tipo muito específico de programa (ou conjunto de programas) responsável por gerenciar os recursos de um computador: Memória, Disco, Processador, Placa de vídeo, comunicação com a rede, etc.</p>
+<p>Os mais conhecidos sistemas operacionais são o Windows e o Linux, no mundo dos computadores, e Android e iOS no mundo dos dispositivos móveis (celulares smartphones, tablets, etc). Mas existem muitos outros.</p>
+<p>Dentre as coisas que os sistemas operacionais gerenciam, se encontram a ideia de <em>Processos Computacionais</em>. Sempre que um programa qualquer precisa ser executado, o que o Sistema Operacional faz é criar um novo processo e atribuir a ele a tarefa de executar as instruções contidas neste programa, intermediando junto ao Sistema Operacional para alocar recursos (memória, processamento, disco, rede, etc). Quando todas as instruções foram devidamente executadas, ou alguma situação inesperada de falha acontece, levando-o ao estado de erro, a execução do programa é encerrada e o processo deixa de existir.</p>
+<p>O sistema operacional faz isso o tempo todo. Se você usa Windows, você pode ser capaz de ver uma lista dos processos em execução pressionando junto as teclas <em>Ctrl+Shift+Escape</em>. Na aba <em>Processos</em> você consegue ter uma ideia, mesmo que você não esteja fazendo nada além de assistir um vídeo, você certamente irá notar que a lista de processos em execução é extensa, e que o seu computador está mais ocupado do que você poderia imaginar. E cada um destes processos está executando um programa.</p>
+<p>O motivo de haver tantos processos, mesmo que você esteja executando poucos programas, ilustra a grande variedade de tipos de programas que podem ser executados por um computador.</p>
+<p>Aplicações simples como uma calculadora, um editor de textos, ou um tocador de músicas, ou mais complexas como um aplicativo de mensagens, um navegador da web, uma planilha de cálculos ou um jogo eletrônico, são os tipos mais comuns de programas que nós usamos no dia-a-dia.</p>
+<p>Mas, ao trabalhar com programação, você irá encontrar tipos bem mais específicos de programas, como sistemas, que gerenciam recursos complexos e estabelecem uma interface para interagir com eles, e utilitários, que são ferramentas específicas para lidar com o uso destes recursos, como gerenciadores de arquivos, formatadores de discos, anti-vírus e gerenciadores de senhas e criptografia, etc.</p>
+<p>Alguns destes programas são executados a partir da própria intervenção do usuário, como quando você abre o seu navegador para usar suas redes sociais, ou um app no celular para enviar uma mensagem. Outros programas rodam silenciosamente na memória, para disponibilizar serviços que são utilizados por outros meios, como Bluetooth, por exemplo.</p>
+<p>E ainda existem programas com os quais você interage que sequer estão sendo executados no computador ou dispositivo móvel que você está usando. Como quando você acessa a internet. O navegador, ou o aplicativo de rede social que você usa, ambos estão sendo executados em processos no seu dispositivo, mas estão interagindo com programas remotos, que estão sendo executados em computadores ao redor do mundo, que fornecem as informações para que estes programas funcionem da forma como você espera.</p>
+<p>Criar programas não é uma tarefa trivial. Não é como simplesmente dizer ao computador "Faça isso, faça aquilo". Há uma imaterialidade envolvida no processo que torna a atividade de criar programas análoga a algo sobrenatural. Conjurar espíritos que habitam os computadores para manipular dados usando <em>feitiços</em> criados através de símbolos arcanos chamados linguagens de programação, é a forma mais bacana de descrever o que fazem as pessoas que criam programas.</p>
+<p>De certa forma, você está embarcando na jornada de um "aprendiz de feitceiro", e vai aprender a conjurar estes processos e fazê-los realizar tarefas, obter dados e manipulá-los, afetando o mundo em que vivemos.</p>
+<blockquote>
+<p>Um processo computacional, em um computador que funciona corretamente, executa programas de forma precisa e acurada. Por isto, como aprendizes de feiticeiro, pessoas novatas em programação precisam aprender a entender e antecipar as consequências de sua conjuração. Mesmo pequenos erros (normalmente chamados de bugs ou glitches) podem ter consequências complexas e imprevizíveis.</p>
+</blockquote>
+<p>É isto que você vai aprender neste curso: criar programas, entender e antecipar como eles deveriam se comportar, identificar e corrigir erros, e garantir que eles realizarão tarefas complexas.</p>
+<h2 id="referencias">Referências</h2>
+<h2 id="-building-abstraction-with-procedures">- <a href="https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book-Z-H-9.html#%_chap_1">Building Abstraction with Procedures</a></h2></div><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+    let correctAnswers = fieldset.querySelectorAll(
+      'input[name="answer"][correct]'
+    );
+    // Check if all correct answers are selected
+    let is_correct = selectedAnswers.length === correctAnswers.length;
+    for (let i = 0; i < selectedAnswers.length; i++) {
+      if (!selectedAnswers[i].hasAttribute('correct')) {
+        is_correct = false;
+        break;
+      }
+    }
+    let section = quiz.querySelector('section');
+    if (is_correct) {
+      section.classList.remove('hidden');
+      resetFieldset(fieldset);
+      // Mark all fields with colors
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      for (let i = 0; i < allAnswers.length; i++) {
+        if (allAnswers[i].hasAttribute('correct')) {
+          allAnswers[i].parentElement.classList.add('correct');
+        } else {
+          allAnswers[i].parentElement.classList.add('wrong');
+        }
+      }
+    } else {
+      section.classList.add('hidden');
+      resetFieldset(fieldset);
+      // Mark wrong fields with colors
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        if (!selectedAnswers[i].hasAttribute('correct')) {
+          selectedAnswers[i].parentElement.classList.add('wrong');
+        } else {
+          selectedAnswers[i].parentElement.classList.add('correct');
+        }
+      }
+    }
+  });
+});
+
+function resetFieldset(fieldset) {
+  const fieldsetChildren = fieldset.children;
+  for (let i = 0; i < fieldsetChildren.length; i++) {
+    fieldsetChildren[i].classList.remove('wrong');
+    fieldsetChildren[i].classList.remove('correct');
+  }
+}
+</script>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Última atualização">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2024</span>
+  </span>
+
+    
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contribuidores">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      Daniel Moreira Yokoyama
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -461,11 +781,13 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/fundamentos-de-programacao/", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "search.suggest", "search.highlight", "search.share", "content.footnote.tooltips", "navigation.indexes", "navigation.sections"], "search": "/fundamentos-de-programacao/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "search.suggest", "search.highlight", "search.share", "content.footnote.tooltips", "navigation.indexes", "navigation.sections"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="/fundamentos-de-programacao/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
